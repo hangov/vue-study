@@ -1,12 +1,12 @@
 <template>
 	<div class="aa">
 		<div class="side-bar">
-			<router-link to="/user_infomation">库分组</router-link>
+			<router-link to="/User1">库分组</router-link>
 			
 		</div>
 		<div class="content">
-			<router-link to="/user_infomation">题库</router-link>
-			<router-link to="/user_profile">资源库</router-link>
+			<router-link to="/User2">题库</router-link>
+			<router-link to="/User3">资源库</router-link>
 			<router-link to="/account_security">活动库</router-link>
 			<router-view /></div>
 	</div>

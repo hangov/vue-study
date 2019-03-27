@@ -39,7 +39,40 @@ export default new Router({
 					component: resolve => require(['../components/Lib.vue'], resolve),
 					meta: {
 						title: '库管理'
-					}
+					},
+					children: [{
+							//我的信息
+							path: '/User1',
+							component: resolve => require(['../components/User1.vue'], resolve),
+							meta: {
+								title: '库分组'
+							}
+						},
+						{
+							//用户信息
+							path: '/User2',
+							component: resolve => require(['../components/User2.vue'], resolve),
+							meta: {
+								title: '题库'
+							}
+						},
+						{
+							//账号安全
+							path: '/User3',
+							component: resolve => require(['../components/User3.vue'], resolve),
+							meta: {
+								title: '资源库'
+							}
+						},
+						{
+							//账号安全
+							path: '/User4',
+							component: resolve => require(['../components/User4.vue'], resolve),
+							meta: {
+								title: '活动库'
+							}
+						}
+					]
 				},
 				{
 					//班课详情组件
